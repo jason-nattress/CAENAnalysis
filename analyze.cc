@@ -62,7 +62,7 @@ void analyze::Loop(string fileName, HistoClass histos)
           if(val > .200) selectedCounts++; 
         }
 
-        if(Channel == 5)// || Channel == 3) 
+        else if(Channel == 5)// || Channel == 3) 
         {
           //if(neutronCut[Channel]->IsInside(energy,psp)) particleType = "neutron";
           if(gammaCut[Channel]->IsInside(energy,psp)) particleType = "gamma";
